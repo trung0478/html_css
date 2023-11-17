@@ -1,0 +1,146 @@
+:root {
+    --textcolor: #585656;
+    --primarycolor: #34BF75;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 20px;
+}
+
+i:hover,
+.nav ul li:hover i,
+.nav ul li:hover a {
+    color: var(--primarycolor);
+}
+
+.nav ul li a,
+i {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.contact {
+    background-color: var(--primarycolor);
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 12px;
+}
+
+.contact:hover {
+    color: var(--textcolor);
+}
+
+
+/* main */
+.content_top {
+    padding: 18px 32px 12px;
+    background-color: var(--primarycolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_top p {
+    color: #fff;
+}
+
+.content_items input {
+    border: none;
+    padding: 10px 20px;
+}
+
+.mt-2 {
+    margin-top: 34px;
+}
+
+.content_center {
+    margin: 46px 0;
+    color: var(--textcolor);
+    text-align: center;
+}
+
+.content_bottom {
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 34px;
+    color: var(--textcolor);
+    margin-bottom: 100px;
+}
+
+
+.content_bottom_box {
+    border: 1px solid #ccc;
+}
+
+.content_bottom_box h4 {
+    text-align: center;
+}
+
+.box_above{
+    overflow: hidden;
+}
+
+.box_above:hover img{
+    transform:scale(1.1) rotate(10deg);
+}
+
+.box_above img{
+    transition: all .5s linear;
+}
+
+.box_below,
+.box_center {
+    padding: 0 16px 10px;
+}
+
+.box_below {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_below p {
+    color: #fb6b2b;
+}
+
+
+
+.box_center_heading {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.box_center_address i {
+    color: var(--primarycolor);
+    margin: 5px 8px 5px 0;
+}
